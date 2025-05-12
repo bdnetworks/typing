@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="refresh" content="3; url=bn-bengali-3/index.html" />
+  <title>বাংলা টাইপিং এর জগতে স্বাগতম</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'SolaimanLipi', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(45deg, #8EC5FC, #E0C3FC);
+      background-size: 400% 400%;
+      animation: dreamy 15s ease infinite;
+      color: #fff;
+      text-align: center;
+    }
+
+    @keyframes dreamy {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    .message {
+      backdrop-filter: blur(8px);
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.2);
+      max-width: 90%;
+    }
+
+    .message h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .message p {
+      font-size: 1.2em;
+    }
+
+    .loader {
+      margin-top: 20px;
+      border: 6px solid #fff;
+      border-top: 6px solid #00C9A7;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      display: inline-block;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="message">
+    <h1>বাংলা টাইপিং শিখতে চলুন...</h1>
+    <p>স্বাগতম! আপনি এখন যাচ্ছেন বাংলা টাইপিং শেখার অনুশীলনীতে ✍️</p>
+    <div class="loader"></div>
+  </div>
+</body>
+</html>
