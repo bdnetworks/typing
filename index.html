@@ -2,70 +2,111 @@
 <html lang="bn">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="refresh" content="3; url=bn-bengali-3/index.html" />
-  <title>বাংলা টাইপিং এর জগতে স্বাগতম</title>
+  <meta http-equiv="refresh" content="4; url=bn-bengali-3/index.html" />
+  <title>স্বপ্নের টাইপিং</title>
   <style>
-    body {
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;700&display=swap');
+
+    * {
       margin: 0;
       padding: 0;
-      font-family: 'SolaimanLipi', sans-serif;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Noto Sans Bengali', sans-serif;
+      background: radial-gradient(ellipse at center, #0f2027, #203a43, #2c5364);
+      height: 100vh;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      background: linear-gradient(45deg, #8EC5FC, #E0C3FC);
-      background-size: 400% 400%;
-      animation: dreamy 15s ease infinite;
-      color: #fff;
+      color: #ffffff;
+      overflow: hidden;
+    }
+
+    .container {
       text-align: center;
-    }
-
-    @keyframes dreamy {
-      0% {background-position: 0% 50%;}
-      50% {background-position: 100% 50%;}
-      100% {background-position: 0% 50%;}
-    }
-
-    .message {
-      backdrop-filter: blur(8px);
-      background-color: rgba(0, 0, 0, 0.3);
-      padding: 30px;
+      padding: 40px 20px;
       border-radius: 20px;
-      box-shadow: 0 0 30px rgba(0,0,0,0.2);
-      max-width: 90%;
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.15);
+      backdrop-filter: blur(20px);
+      animation: fadeInUp 1.2s ease;
     }
 
-    .message h1 {
-      font-size: 2em;
+    h1 {
+      font-size: 2.8em;
+      color: #00f7ff;
+      text-shadow: 0 0 10px #00f7ff, 0 0 20px #00f7ff99;
       margin-bottom: 10px;
     }
 
-    .message p {
+    p {
       font-size: 1.2em;
+      color: #e0f7fa;
+      margin-bottom: 25px;
+      text-shadow: 0 0 5px #00acc1aa;
     }
 
     .loader {
-      margin-top: 20px;
-      border: 6px solid #fff;
-      border-top: 6px solid #00C9A7;
+      width: 50px;
+      height: 50px;
+      border: 5px solid #ffffff30;
+      border-top: 5px solid #00f7ff;
       border-radius: 50%;
-      width: 40px;
-      height: 40px;
       animation: spin 1s linear infinite;
-      display: inline-block;
+      margin: 0 auto 15px;
+    }
+
+    .credit {
+      font-size: 0.9em;
+      color: #a0d9ff;
+      margin-top: 10px;
+    }
+
+    .credit a {
+      color: #4dd0e1;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .credit a:hover {
+      color: #00e5ff;
     }
 
     @keyframes spin {
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
     }
+
+    @keyframes fadeInUp {
+      0% {opacity: 0; transform: translateY(30px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+
+    /* Optional: glowing background dots */
+    .dots {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url('https://i.ibb.co/S6JXZyX/glow-dots.png') repeat;
+      opacity: 0.06;
+      z-index: -1;
+    }
   </style>
 </head>
 <body>
-  <div class="message">
-    <h1>বাংলা টাইপিং শিখতে চলুন...</h1>
-    <p>স্বাগতম! আপনি এখন যাচ্ছেন বাংলা টাইপিং শেখার অনুশীলনীতে ✍️</p>
+  <div class="dots"></div>
+  <div class="container">
+    <h1>স্বপ্নের বাংলা টাইপিং</h1>
+    <p>আপনি যাচ্ছেন বাংলা টাইপিং শেখার এক নতুন ভ্রমণে ✍️</p>
     <div class="loader"></div>
+    <div class="credit">
+      ডেভেলপার: <strong>সাকিব</strong> |  
+      <a href="https://facebook.com/sakib.info" target="_blank">facebook.com/sakib.info</a>
+    </div>
   </div>
 </body>
 </html>
